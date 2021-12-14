@@ -1,0 +1,11 @@
+{{ define "main" }}
+    <h1>{{ .Title }}</h1>
+    {{ if .Date }}
+        {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ date
+        {{ .Date.Format "2006-01-02 15:04:05" }}
+        <br>
+    {{ end }}
+    {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ cat {{ .Permalink }}.md
+    <br>
+    {{ .Content }}
+{{ end }}
