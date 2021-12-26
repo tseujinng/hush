@@ -6,7 +6,10 @@
         {{ .Date.Format "2006-01-02 15:04:05" }}
         <br>
     {{ end }}
-    {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ cat {{ .Permalink }}.md
+    {{$cat0 := .URL}}
+    {{$cat1 := strings.TrimRight "/" $cat0}}
+    {{$cat2 := strings.TrimLeft "/" $cat1}}
+    {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ cat {{ $cat2 }}.md
     <br>
     {{ .Content }}
 {{ end }}
