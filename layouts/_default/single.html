@@ -1,5 +1,4 @@
 {{ define "main" }}
-    <h1>{{ .Title }}</h1>
     {{ if .Date }}
         {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ date
         <br>
@@ -11,5 +10,6 @@
     {{$cat2 := strings.TrimLeft "/" $cat1}}
     {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ cat {{ $cat2 }}.md
     <br>
+    <h1>{{ .Title }}</h1>
     {{ .Content }}
 {{ end }}
