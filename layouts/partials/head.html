@@ -2,13 +2,13 @@
     <meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
     {{ if .IsHome }}
-        <title>{{ .Site.Title }}</title>
+        <title>/{{ .Site.Title }}</title>
     {{ else if and (eq .Type "wenzhang") ( .IsNode ) }}
-        <title>文章 | {{ .Site.Title }}</title>
+        <title>文章 /{{ .Site.Title }}</title>
     {{ else if and (eq .Type "riji") ( .IsNode ) }}
-        <title>日记 | {{ .Site.Title }}</title>
+        <title>日记 /{{ .Site.Title }}</title>
     {{ else }}
-        <title>{{ .Title }} | {{ .Site.Title }}</title>
+        <title>{{ .Title }} /{{ .Site.Title }}</title>
     {{ end }}
 	{{ with .Site.Params.author }}
         <meta name="author" content="{{ . }}">
