@@ -12,4 +12,11 @@
     <br>
     <h1>{{ .Title }}</h1>
     {{ .Content }}
+    <br>
+    {{ if .Params.license }}
+        许可协议 {{ .Params.license }}
+    {{ else if .Site.Params.license }}
+        许可协议 {{ .Site.Params.license }}
+    {{ end }}
+    <br>
 {{ end }}
