@@ -10,7 +10,7 @@
     {{$cat2 := strings.TrimLeft "/" $cat1}}
     {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ cat {{ $cat2 }}.md
     <br>
-    <h1>{{ .Title }}</h1>
+    <h2>{{ .Title }}</h2>
     {{ .Content }}
     <br>
     {{ if .Params.license }}
