@@ -1,6 +1,6 @@
 {{ define "main" }}
     {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ ls 
     {{ range .Pages }}
-        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <br><a href="{{ .Permalink }}">{{ .Title }}</a>
     {{ end }}
 {{ end }}

@@ -1,7 +1,9 @@
 body{
     width: 64rem;
     font-family: Menlo, "Courier New", Courier, monospace;
-    font-size: 20px
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 300%
 }
 img{
     display: block;
@@ -9,6 +11,11 @@ img{
     height: auto;
     margin: auto
 }
+h1{
+    font-size: 20px;
+    line-height: 100%;
+}
 ul {
     padding: 0;
+    line-height: 100%
 }
