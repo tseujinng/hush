@@ -1,7 +1,7 @@
 {{ define "main" }}
 {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ ls {{ .Site.Params.Show }}
     {{ range .Site.Pages }}
-        {{ if eq .Type .Site.Params.Show }}
+        {{ if and (eq .Type .Site.Params.Show) (eq false .IsNode ) }}
             <br><a href="{{ .Permalink }}">{{ .Title }}</a>
         {{end}}
     {{ end }}
