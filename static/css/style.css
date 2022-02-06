@@ -1,21 +1,33 @@
 body{
-    width: 64rem;
-    font-family: Menlo, "Courier New", Courier, monospace;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 300%
+    margin-left: 14%;
+    margin-right: 14%;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: large;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Noto Sans Mono", "Courier New", monospace;
 }
 img{
     display: block;
     max-width: 100%;
     height: auto;
-    margin: auto
+    margin: auto;
 }
-h1{
-    font-size: 20px;
-    line-height: 100%;
+h1, h2, h3, h4, h5, h6{
+    font-size: large;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
 }
-ul {
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+ul{
     padding: 0;
-    line-height: 100%
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a{
+    color: #ffffff;
+    text-decoration: underline;
 }
