@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
     {{- partial "head.html" . -}}
-    {{ if .Site.Params.analytics.enable = true }}
+    {{ if .Site.Params.analytics.enable }}
         {{- partial "cfga.html" . -}}
     {{ end }}
     <body>
