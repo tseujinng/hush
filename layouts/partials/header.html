@@ -1,5 +1,9 @@
 {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ uname -n
-<h1><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h1>
+{{ if or (.IsHome) (.IsNode) }}
+    <h1><a href="{{ .Site.BaseURL }}" class="shuc">{{ .Site.Title }}</a></h1>
+{{ else }}
+    <br><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a><br>
+{{ end }}
 {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ ls
 {{ with .Site.Menus.main }}
 <nav>
