@@ -34,3 +34,7 @@ a{
 .shuc{
     font-weight: normal;
 }
+nav li{
+    list-style-type: none;
+    display:inline;
+}
