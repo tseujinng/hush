@@ -2,8 +2,8 @@ body{
     margin-left: 14%;
     margin-right: 14%;
     background-color: #1e1e1e;
-    color: #ffffff;
-    font-size: large;
+    color: #fff;
+    font-size: 1.5em;
     font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Noto Sans Mono", "Courier New", monospace;
 }
 img{
@@ -13,10 +13,28 @@ img{
     margin: auto;
 }
 h1, h2, h3, h4, h5, h6{
-    font-size: large;
+    font-size: 100%;
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 0;
+}
+article h1::before{
+    content: "# ";
+}
+h2::before{
+    content: "## ";
+}
+h3::before{
+    content: "### ";
+}
+h4::before{
+    content: "#### ";
+}
+h5::before{
+    content: "##### ";
+}
+h6::before{
+    content: "###### ";
 }
 p{
     margin-top: 0;
@@ -28,13 +46,23 @@ ul{
     margin-bottom: 0;
 }
 a{
-    color: #ffffff;
+    color: #fff;
     text-decoration: underline;
+}
+.minglingh{
+    font-weight: bold;
 }
 .shuc{
     font-weight: normal;
 }
+.lvs{
+    color: #26a269;
+}
+.lans{
+    color: #12488b;
+}
 nav li{
     list-style-type: none;
-    display:inline;
+    display: inline;
+    margin-right: 1em;
 }

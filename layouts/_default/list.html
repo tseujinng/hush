@@ -1,5 +1,5 @@
 {{ define "main" }}
-    {{ .Site.Params.Author }}@{{ .Site.Title }}:~$ ls 
+    <span class="minglingh"><span class="lvs">{{ .Site.Params.Author }}@{{ .Site.Title }}</span>:<span class="lans">~</span>$ ls</span>
     {{ range .Pages }}
         <br><a href="{{ .Permalink }}">{{ .Title }}</a>
     {{ end }}

@@ -1,10 +1,10 @@
-{{ .Site.Params.Author }}@{{ .Site.Title }}:~$ uname -n
+<span class="minglingh"><span class="lvs">{{ .Site.Params.Author }}@{{ .Site.Title }}</span>:<span class="lans">~</span>$ uname -n</span>
 {{ if or (.IsHome) (.IsNode) }}
     <h1><a href="{{ .Site.BaseURL }}" class="shuc">{{ .Site.Title }}</a></h1>
 {{ else }}
     <br><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a><br>
 {{ end }}
-{{ .Site.Params.Author }}@{{ .Site.Title }}:~$ ls
+<span class="minglingh"><span class="lvs">{{ .Site.Params.Author }}@{{ .Site.Title }}</span>:<span class="lans">~</span>$ ls</span>
 {{ with .Site.Menus.main }}
 <nav>
     <ul>
