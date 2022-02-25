@@ -1,5 +1,5 @@
 {{ define "main" }}
-{{ .Site.Params.Author }}@{{ .Site.Title }}:~$ ls {{ .Site.Params.Show }}
+<span class="minglingh"><span class="lvs">{{ .Site.Params.Author }}@{{ .Site.Title }}</span>:<span class="lans">~</span>$ ls {{ .Site.Params.Show }}</span>
     {{ range .Site.Pages }}
         {{ if and (eq .Type .Site.Params.Show) (eq false .IsNode ) }}
             <br><a href="{{ .Permalink }}">{{ .Title }}</a>
