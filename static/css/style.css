@@ -4,7 +4,8 @@ body{
     background-color: #1e1e1e;
     color: #fff;
     font-size: 1.5em;
-    font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Noto Sans Mono", "Courier New", "Microsoft YaHei", 微软雅黑, monospace;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", "Cascadia Code", "Segoe UI Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", SimHei, sans-serif;
+
 }
 img{
     display: block;
