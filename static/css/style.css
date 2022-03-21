@@ -1,11 +1,10 @@
 body{
     margin-left: 14%;
     margin-right: 14%;
-    background-color: #1e1e1e;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
     font-size: 1.5em;
     font-family: ui-monospace, SFMono-Regular, "SF Mono", "Cascadia Code", "Segoe UI Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", sans-serif;
-
 }
 img{
     display: block;
@@ -47,7 +46,7 @@ ul{
     margin-bottom: 0;
 }
 a{
-    color: #fff;
+    color: #000;
     text-decoration: underline;
 }
 .minglingh{
