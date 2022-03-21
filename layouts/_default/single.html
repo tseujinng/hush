@@ -1,8 +1,5 @@
 {{ define "main" }}
-    {{$cat0 := .RelPermalink}}
-    {{$cat1 := strings.TrimRight "/" $cat0}}
-    {{$cat2 := strings.TrimLeft "/" $cat1}}
-    <span class="minglingh"><span class="lvs">{{ .Site.Params.Author }}@{{ .Site.Title }}</span>:<span class="lans">~</span>$ cat {{ $cat2 }}.md</span>
+    <span class="minglingh"><span class="lvs">{{ .Site.Params.Author }}@{{ .Site.Title }}</span>:<span class="lans">~</span>$ cat {{ .File.Path }}</span>
     <br><article>
     <h1>{{ .Title }}</h1>
     date: <time pubdate>{{ .Date.Format "2006-01-02 15:04:05" }}</time>
