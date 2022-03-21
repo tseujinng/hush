@@ -66,3 +66,6 @@ nav li{
     display: inline;
     margin-right: 1em;
 }
+pre{
+    overflow: auto;
+}
