@@ -2,7 +2,9 @@
 <html lang="{{ .Site.LanguageCode }}">
     {{- partial "head.html" . -}}
     {{ if eq .Site.Params.analytics.enable true }}
-        {{- partial "cfga.html" . -}}
+        {{ if eq .Site.IsServer false }}
+            {{- partial "cfga.html" . -}}
+        {{ end }}
     {{ end }}
     <body>
         {{- partial "header.html" . -}}
