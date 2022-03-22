@@ -6,6 +6,6 @@
 {{ else }}
     <figure>
         <img src="{{ .Destination | safeURL }}" alt="{{ .Text }}" title="{{ .Text }}" />
-        <figcaption>{{ .Text }}</figcaption>
+        <figcaption>※{{ .Text }}</figcaption>
     </figure>
 {{ end }}
