@@ -1,16 +1,16 @@
 body{
-    margin-left: 14%;
-    margin-right: 14%;
-    background-color: #fff;
-    color: #000;
+    width: 80%;
+    margin: auto;
     font-size: 1.5em;
     font-family: ui-monospace, SFMono-Regular, "SF Mono", "Cascadia Code", "Segoe UI Mono", "Source Code Pro", Menlo, Consolas, "Liberation Mono", sans-serif;
 }
 img{
-    display: block;
-    max-width: 100%;
-    height: auto;
-    margin: auto;
+    width: 100%;
+}
+figcaption{
+    text-align: center;
+    color: #505050;
+    font-size: 0.8em;
 }
 h1, h2, h3, h4, h5, h6{
     font-size: 100%;
