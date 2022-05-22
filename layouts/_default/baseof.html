@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
     {{- partial "head.html" . -}}
-    {{ if eq .Site.Params.analytics.enable true }}
-        {{ if eq .Site.IsServer false }}
+    {{ if .Site.Params.analytics.enable }}
             {{- partial "cfga.html" . -}}
-        {{ end }}
     {{ end }}
     <body>
         {{- partial "header.html" . -}}
